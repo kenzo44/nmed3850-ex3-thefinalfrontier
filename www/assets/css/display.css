@@ -3,6 +3,10 @@
     src: url(../font/nasalization-rg.ttf);
     font-family: nasalization;
 }
+@font-face {
+    src: url(../font/OpenSans-Regular.ttf);
+    font-family: Openssans;
+}
 
 * {
     box-sizing: border-box;
@@ -28,4 +32,23 @@ img {
     width: 100%;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.timeline-item-date{
+    color: #fff;
+    font-family: Openssans;
+}
+#td-title{
+    font-family: Openssans;
+    font-size: 23px;
+}
+
+#td-copyright{
+    font-family: Openssans;
+    font-size: 14px;
+}
+.readM{
+    font-family: Openssans;
+    padding: 14px;
+    text-align: right;
+    font-size: 15px;
 }
