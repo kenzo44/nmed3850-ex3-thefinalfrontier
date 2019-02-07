@@ -11,19 +11,114 @@
     <!--Framework 7 Stylesheet-->
     <link rel="stylesheet" href="assets/css/framework7.min.css">
     <link rel="stylesheet" href="assets/css/display.css">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
+        <!-- Statusbar overlay element -->
+        <div class="statusbar"></div>
         <div class="view view-main">
+
             <div class="page" data-name="home">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title"><i class="fas fa-rocket"></i> The Final Frontier</div>
+                        <div class="right" style="margin-right: 16px;"><i class="fas fa-sync-alt" onclick="freshStart()"></i></div>
+                    </div>
+                </div>
+
                 <div class="page-content">
-                    ok.
+
+                    <!--Star background Credits: https://codepen.io/noahblon/pen/GKflw-->
+                    <div id="wardDrive">
+                        <div class="scene">
+                            <div class="wrap">
+                                <div class="wall wall-right"></div>
+                                <div class="wall wall-left"></div>
+                                <div class="wall wall-top"></div>
+                                <div class="wall wall-bottom"></div>
+                                <div class="wall wall-back"></div>
+                            </div>
+                            <div class="wrap">
+                                <div class="wall wall-right"></div>
+                                <div class="wall wall-left"></div>
+                                <div class="wall wall-top"></div>
+                                <div class="wall wall-bottom"></div>
+                                <div class="wall wall-back"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-item-date">7 <small>FEB</small></div>
+                            <div class="timeline-item-divider"></div>
+
+                            <div class="timeline-item-content">
+
+                                <div class="timeline-item-inner">
+
+                                    <div class="timeline-item-title">
+                                        <div id="td-title"></div>
+                                    </div><br>
+                                    <div class="timeline-item-subtitle">
+                                        <div id="td-container"></div>
+                                    </div><br>
+                                    <div class="timeline-item-text">
+                                        <i class="far fa-copyright"></i> <span id="td-copyright"></span>
+                                        <div id="myBtn" class="readM">Read More</div>
+                                    </div>
+
+                                    <div id="myModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <p id="td-explanation"></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-item-date">6 <small>FEB</small></div>
+                            <div class="timeline-item-divider"></div>
+
+                            <div class="timeline-item-content">
+
+                                <div class="timeline-item-inner">
+
+                                    <div class="timeline-item-title">
+                                        <div id="yd-title"></div>
+                                    </div><br>
+                                    <div class="timeline-item-subtitle">
+                                        <div id="yd-container"></div>
+                                    </div><br>
+                                    <div class="timeline-item-text">
+                                        <i class="far fa-copyright"></i> <span id="yd-copyright"></span>
+                                        <div id="myBtnt" class="readM">Read More</div>
+                                    </div>
+
+                                    <div id="myModalt" class="modalt">
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <span class="closet">&times;</span>
+                                            <p id="yd-explanation"></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     
-                    
+                     <div class="me">Developed by <i class="fa fa-paw" aria-hidden="true"></i> Kenish Suri</div>
                 </div>
                 <!--end page-content-->
             </div>
@@ -32,11 +127,17 @@
         <!--end main view-->
     </div>
     <!--end app-->
+    <script>
+        function freshStart() {
+            window.location.reload();
+        }
+    </script>
     <script type="text/javascript" src="cordova.js"></script>
-
     <!--Framework 7-->
     <script type="text/javascript" src="assets/js/framework7.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/nasa-data.js"></script>
 </body>
 
 </html>
