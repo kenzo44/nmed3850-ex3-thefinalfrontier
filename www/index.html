@@ -11,19 +11,53 @@
     <!--Framework 7 Stylesheet-->
     <link rel="stylesheet" href="assets/css/framework7.min.css">
     <link rel="stylesheet" href="assets/css/display.css">
+    <link rel="stylesheet" href="assets/css/stars.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="app">
-        <div class="view view-main">
-            <div class="page" data-name="home">
-                <div class="page-content">
-                    ok.
 
-                    
-                    
+        <div class="view view-main">
+
+            <div class="page" data-name="home">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title"><i class="fas fa-rocket"></i> The Final Frontier</div>
+                    </div>
+                </div>
+
+
+                <div class="page-content">
+                    <!--Star Background-->
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-item-date">21 <small>DEC</small></div>
+                            <div class="timeline-item-divider"></div>
+                            <div class="timeline-item-content">
+                                <div class="timeline-item-inner">
+                                    <div class="timeline-item-time">12:30</div>
+                                    <div class="timeline-item-title" id="td-title"></div>
+                                    <div class="timeline-item-subtitle">Subtitle</div>
+                                    <div class="timeline-item-text">Text</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            ... another timeline item ...
+                        </div>
+                    </div>
+
+<!--                    <div id="td-container"></div>-->
+
                 </div>
                 <!--end page-content-->
             </div>
@@ -37,6 +71,7 @@
     <!--Framework 7-->
     <script type="text/javascript" src="assets/js/framework7.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/nasa-data.js"></script>
 </body>
 
 </html>

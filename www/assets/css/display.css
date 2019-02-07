@@ -1,0 +1,23 @@
+/*Fonts*/
+@font-face {
+    src: url(../font/nasalization-rg.ttf);
+    font-family: nasalization;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-content {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background-blend-mode: multiply;
+}
+
+.md .navbar {
+    background: rgba(30,60,114,.7);
+    font-family: nasalization;
+}
+
+    
