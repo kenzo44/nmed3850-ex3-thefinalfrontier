@@ -218,3 +218,12 @@ img {
     opacity: 0;
   }
 }
+
+.me{
+    position: absolute;
+    display: block;
+    color: #fff;
+    right: 20px;
+    font-family: Openssans;
+    font-size: 14px;
+}
