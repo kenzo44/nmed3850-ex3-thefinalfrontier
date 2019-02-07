@@ -19,7 +19,8 @@
 
 <body>
     <div id="app">
-
+        <!-- Statusbar overlay element -->
+        <div class="statusbar"></div>
         <div class="view view-main">
 
             <div class="page" data-name="home">
@@ -28,6 +29,7 @@
                 <div class="navbar">
                     <div class="navbar-inner">
                         <div class="title"><i class="fas fa-rocket"></i> The Final Frontier</div>
+                        <div class="right" style="margin-right: 16px;"><i class="fas fa-sync-alt" onclick="freshStart()"></i></div>
                     </div>
                 </div>
 
@@ -52,11 +54,20 @@
                             </div>
                         </div>
                         <div class="timeline-item">
-                            ... another timeline item ...
+                            <div class="timeline-item-date">21 <small>DEC</small></div>
+                            <div class="timeline-item-divider"></div>
+                            <div class="timeline-item-content">
+                                <div class="timeline-item-inner">
+                                    <div class="timeline-item-time">12:30</div>
+                                    <div class="timeline-item-title" id="td-title"></div>
+                                    <div class="timeline-item-subtitle">Subtitle</div>
+                                    <div class="timeline-item-text">Text</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-<!--                    <div id="td-container"></div>-->
+                    <!--                    <div id="td-container"></div>-->
 
                 </div>
                 <!--end page-content-->
@@ -66,6 +77,12 @@
         <!--end main view-->
     </div>
     <!--end app-->
+    <script>
+        function freshStart() {
+            window.location.reload();
+        }
+    </script>
+
     <script type="text/javascript" src="cordova.js"></script>
 
     <!--Framework 7-->
