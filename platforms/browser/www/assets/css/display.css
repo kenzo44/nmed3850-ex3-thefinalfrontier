@@ -11,7 +11,6 @@
 * {
     box-sizing: border-box;
 }
-
 .statusbar {
     background: blue;
 }
@@ -53,7 +52,7 @@ img {
 
 #yd-copyright{
     font-family: Openssans;
-    font-size: 14px;
+    font-size: 12px;
 }
 .readM{
     color: dodgerblue;
@@ -105,7 +104,7 @@ img {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -120,7 +119,7 @@ img {
 .closet {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -131,6 +130,9 @@ img {
   cursor: pointer;
 }
 
+#wardDrive{
+    text-align: right;
+}
 .wall{
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/PIA09959-1280x800_copy.jpg);
   background-size: cover;

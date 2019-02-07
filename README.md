@@ -9,4 +9,6 @@ A multi-screen NASA Picture of the Day app
 * Image title
 * Image description
 
-Cool https://github.com/nasa/apod-api
+Credits for sick looking warp drive: https://codepen.io/noahblon/pen/GKflw
+
+Cool. NASA <3 - https://github.com/nasa/apod-api
